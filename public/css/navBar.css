@@ -1,15 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .admin a {
     color: white;
     text-decoration: none;
 }
 .sena-navegador {
-    background-color: #2F9E3F;
+    background-color: #389045;
     padding: 1rem;
 }
 
@@ -27,7 +22,7 @@
     gap: 1rem;
 }
 .admin{
-    color: white;
+    color: #389045;
     font-size: 1.5rem;
     font-weight: 700;
 }

@@ -8,11 +8,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{ asset('css/navBar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bienvenido.css') }}">
 </head>
 
-<body>
-    @include('includes.navBar')
-    @yield('content')
-    @include('includes.footer')
-</body>
 
+<body>
+    <header>
+        @include('includes.navBar')
+    </header>
+    
+    <main>
+        @yield('content')
+    </main>
+   <footer>
+        @include('includes.footer')
+   </footer>
+    
+</body>

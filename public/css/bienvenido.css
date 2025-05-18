@@ -1,31 +1,8 @@
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     font-family: 'Arial', sans-serif;
- }
-
- body {
-     min-height: 100vh;
-     display: flex;
-     flex-direction: column;
-     background-color: #f8f9fa;
- }
 
 
-
- /* Contenedor principal */
- main {
-     flex: 1;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding: 2rem;
- }
-
- /* Tarjeta de bienvenida */
+ 
  .bienvenido {
-     background: #2F9E3F;
+     background: white;
      color: white;
      padding: 3rem;
      border-radius: 15px;
@@ -34,9 +11,11 @@
      width: 90%;
      box-shadow: 0 10px 30px rgba(47, 158, 63, 0.2);
      animation: cardEntrance 0.8s ease-out;
+      margin: 2rem auto;
  }
 
  .titulo {
+    color: #2F9E3F;
      font-size: 2.8rem;
      margin-bottom: 1.5rem;
      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -53,6 +32,7 @@
      line-height: 1.6;
      margin-bottom: 1rem;
      opacity: 0.9;
+     color: #2F9E3F;
  }
 
 

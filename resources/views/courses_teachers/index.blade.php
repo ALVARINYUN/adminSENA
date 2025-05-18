@@ -8,7 +8,7 @@
 <table class='tabla'>
     <thead>
         <tr class="columnas">
-            <th class='tx'>ID Relación</th>
+            <th class='tx'>ID</th>
             <th class="tx">ID Curso</th>
             <th class="tx">ID Instructor</th>
         </tr>

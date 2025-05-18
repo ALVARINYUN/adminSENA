@@ -1,17 +1,19 @@
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+
+
 .sena-footer {
     background-color: #2F9E3F; 
     margin-top: auto; 
+    width: 100%;
+    padding: 2rem 0;
 }
 .sena-footer .container {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     color: white;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px
 }
 
 .footer-info {
@@ -51,4 +53,6 @@ body {
     opacity: 0.9;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 1.5rem;
+    padding: 1.5rem 0 0; 
+    margin-top: 1rem; 
 }

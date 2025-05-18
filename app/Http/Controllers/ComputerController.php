@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Models\Computer;
 use Illuminate\Http\Request;
-use App\Models\Computer;
+
 
 class ComputerController extends Controller
 {
     public function index()
 {
     $computers = Computer::all();
-    return view('computer.index', compact('computers'));
+    return view('computers.index', compact('computers'));
 }
 }
