@@ -1,0 +1,54 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.sena-footer {
+    background-color: #2F9E3F; 
+    margin-top: auto; 
+}
+.sena-footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: white;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.enlaces {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.enlaces a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: opacity 0.3s;
+}
+
+.enlaces a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.derechos {
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.9;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+}
