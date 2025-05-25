@@ -13,4 +13,15 @@ class ComputerController extends Controller
     $computers = Computer::all();
     return view('computers.index', compact('computers'));
 }
+public function create(){
+    return view('computers.create');
+}
+public function store(Request $request){
+    $computer = new Computer();
+    $computer-> number = $request ->number;
+    $computer-> brand = $request ->brand;
+    $computer->save();
+    return redirect()->route('computers.index');
+}
+
 }

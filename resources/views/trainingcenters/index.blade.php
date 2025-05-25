@@ -4,7 +4,7 @@
 @section('content')
 <link rel="stylesheet" href="{{asset('css/tabla.css')}}">
 <h2 class="texto">Sedes</h2>
-
+<a href="{{ route('trainingcenters.create') }}" class="btn btn-success">Crear </a>
 <table class="tabla">
     <thead>
         <tr class="columnas">

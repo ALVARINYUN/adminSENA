@@ -2,6 +2,7 @@
 @section('content')
 <link rel="stylesheet" href="{{asset('css/tabla.css')}}">
 <h2 class="texto">Cursos</h2>
+<a href="{{ route('course.create') }}" class="btn btn-success">Crear </a>
 <table class='tabla'>
     <thead>
         <tr class="columnas">

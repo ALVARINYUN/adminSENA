@@ -12,4 +12,16 @@ class CourseController extends Controller
         $courses = Course::all();
         return view('courses.index', compact('courses'));
     }
+    public function create(){
+        return view ('courses.create');
+    }
+    public function store (Request $request){
+        $course = new Course;
+        $course ->course_number = request()-> course_number;
+        $course -> day = request()->day;
+        $course -> area_id = request()-> area_id;
+        $course -> training_center_id = request()-> training_center_id;
+        $course->save();
+        return redirect()->route('course.index');
+    }
 }

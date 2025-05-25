@@ -10,4 +10,16 @@ class TeacherController extends Controller
         $teachers = Teacher::all();
         return view('teachers.index', compact('teachers'));
     }
+    public function create(){
+        return view('teachers.create');
+    }
+    public function store(Request $request){
+        $teacher = new Teacher();
+        $teacher -> name = $request-> name;
+        $teacher ->email = $request->email;
+        $teacher ->area_id = $request->area_id;
+        $teacher ->training_center_id = $request -> training_center_id;
+        $teacher->save();
+        return redirect()->route('teacher.index');
+    }
 }
