@@ -21,4 +21,8 @@ class TrainingCenterController extends Controller
         $trainingsCenter-> save();
         return redirect()->route('trainingcenters.index');
     }
+    public function destroy(TrainingCenter $trainingCenter){
+        $trainingCenter->delete();
+        return redirect()->route('trainingcenters.index');
+    }
 }

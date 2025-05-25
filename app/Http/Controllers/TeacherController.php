@@ -22,4 +22,8 @@ class TeacherController extends Controller
         $teacher->save();
         return redirect()->route('teacher.index');
     }
+    public function destroy(Teacher $teacher){
+        $teacher->delete();
+        return redirect()->route('teacher.index');
+    }
 }

@@ -18,11 +18,11 @@
                 </div>
                 <div class="mb-4">
                     <label for="marca" class="form-label fw-bold">Area_id</label>
-                    <input type="text" class="form-control" id="marca" placeholder="Area_id" name="Area_id">
+                    <input type="text" class="form-control" id="marca" placeholder="Area_id" name="area_id">
                 </div>
                 <div class="mb-4">
                     <label for="marca" class="form-label fw-bold">Training_center_id</label>
-                    <input type="text" class="form-control" id="marca" placeholder="Training_center_id" name="Training_center_id">
+                    <input type="text" class="form-control" id="marca" placeholder="Training_center_id" name="training_center_id">
                 </div>
                 <div class="d-flex justify-content-end gap-3">
                     <a href="{{route('teacher.index') }}" class="btn btn-outline-secondary">Cancelar</a>

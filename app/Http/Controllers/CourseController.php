@@ -24,4 +24,8 @@ class CourseController extends Controller
         $course->save();
         return redirect()->route('course.index');
     }
+    public function destroy(Course $course){
+        $course->delete();
+        return redirect()->route('course.index');
+    }
 }
