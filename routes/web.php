@@ -47,7 +47,7 @@ Route::delete('area/{area}', [AreaController::class, 'destroy'])->name('area.des
 Route::delete('computer/{computer}', [ComputerController::class, 'destroy'])->name('computer.destroy');
 Route::delete('course/{course}', [CourseController::class, 'destroy'])->name('course.destroy');
 Route::delete('teacher/{teacher}', [TeacherController::class, 'destroy'])->name('teacher.destroy');
-Route::delete('training-center/{trainingCenter}', [TrainingCenterController::class, 'destroy'])->name('trainingcenters.destroy');
+Route::delete('ttrainingcenter/{trainingcenter}', [TrainingCenterController::class, 'destroy'])->name('trainingcenters.destroy');
 Route::delete('/courses/{course}/teachers/{teacher}', [CourseTeacherController::class, 'destroy'])->name('courses.teachers.destroy');
 Route::get('apprentice/{apprentice}/editar',[ApprenticeController::class,'edit'])->name('apprentice.edit');
 Route::put('apprentice/{apprentice}',[ApprenticeController::class,'update'])->name('apprentice.update');
