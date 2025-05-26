@@ -17,14 +17,14 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($trainingsCenters as $trainingCenter)
+            @foreach ($trainingcenters as $trainingcenter)
                 <tr>
-                    <td class="fil">{{ $trainingCenter->id }}</td>
-                    <td class="fil">{{ $trainingCenter->name }}</td>
-                    <td class="fil">{{ $trainingCenter->location }}</td>
-                    <td class="fil"> <a href=""class="btn btn-success btn-sm">Editar</a></td>
+                    <td class="fil">{{ $trainingcenter->id }}</td>
+                    <td class="fil">{{ $trainingcenter->name }}</td>
+                    <td class="fil">{{ $trainingcenter->location }}</td>
+                    <td class="fil"> <a href="{{route('trainingcenters.edit',$trainingcenter->id)}}"class="btn btn-success btn-sm">Editar</a></td>
                     <td class="fil">
-                        <form action="{{route('trainingcenters.destroy', $trainingCenter->id)}}" method="POST" class="d-inline">
+                        <form action="{{route('trainingcenters.destroy', $trainingcenter->id)}}" method="POST" class="d-inline">
                             @csrf
                             @method('delete')
                             <button type="submit"

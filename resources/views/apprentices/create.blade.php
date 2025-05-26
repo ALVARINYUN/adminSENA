@@ -9,24 +9,24 @@
                 @csrf 
                 <div class="mb-4">
                     <label for="inventario" class="form-label fw-bold">Nombre</label>
-                    <input type="text" class="form-control" id="inventario" placeholder="Nombre" name="name">
+                    <input type="text" class="form-control" id="name" placeholder="Nombre" name="name">
                 </div>
 
                 <div class="mb-4">
                     <label for="marca" class="form-label fw-bold">Email</label>
-                    <input type="text" class="form-control" id="marca" placeholder="Email" name="email">
+                    <input type="text" class="form-control" id="email" placeholder="Email" name="email">
                 </div>
                 <div class="mb-4">
                     <label for="marca" class="form-label fw-bold">Numero celular</label>
-                    <input type="text" class="form-control" id="marca" placeholder="Celular" name="cell_number">
+                    <input type="text" class="form-control" id="cell_number" placeholder="Celular" name="cell_number">
                 </div>
                 <div class="mb-4">
                     <label for="marca" class="form-label fw-bold">Id curso</label>
-                    <input type="text" class="form-control" id="marca" placeholder="id_Curso" name="curse_id">
+                    <input type="text" class="form-control" id="curse_id" placeholder="id_Curso" name="curse_id">
                 </div>
                 <div class="mb-4">
                     <label for="marca" class="form-label fw-bold">Id computador</label>
-                    <input type="text" class="form-control" id="marca" placeholder="id_computador" name="computer_id">
+                    <input type="text" class="form-control" id="computer_id" placeholder="id_computador" name="computer_id">
                 </div>
 
                 <div class="d-flex justify-content-end gap-3">

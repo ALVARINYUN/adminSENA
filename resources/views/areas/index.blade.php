@@ -17,7 +17,7 @@
                 <tr>
                     <td class="fil">{{ $area->id }}</td>
                     <td class="fil">{{ $area->name }}</td>
-                    <td class="fil"> <a href=""class="btn btn-success btn-sm">Editar</a></td>
+                    <td class="fil"> <a href="{{route('area.edit', $area->id)}}"class="btn btn-success btn-sm">Editar</a></td>
                     <td class="fil">
                         <form action="{{route('area.destroy', $area->id)}}" method="POST" class="d-inline">
                             @csrf

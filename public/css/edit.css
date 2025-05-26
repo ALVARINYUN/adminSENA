@@ -1,0 +1,19 @@
+.card {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .form-control:focus {
+        border-color: #389045;
+        box-shadow: 0 0 0 0.25rem rgba(56, 144, 69, 0.25);
+    }
+    
+    .form-label i {
+        min-width: 28px; /* Espacio fijo para iconos */
+    }
+    
+    @media (max-width: 768px) {
+        .card {
+            margin: 20px;
+        }
+    }

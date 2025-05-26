@@ -9,7 +9,7 @@
                 @csrf 
                 <div class="mb-4">
                     <label for="inventario" class="form-label fw-bold">Nombre</label>
-                    <input type="text" class="form-control" id="inventario" placeholder="Nombre" name="name">
+                    <input type="text" class="form-control" id="name" placeholder="Nombre" name="name">
                 </div>
                 <div class="d-flex justify-content-end gap-3">
                     <a href="{{route('areas.index') }}" class="btn btn-outline-secondary">Cancelar</a>

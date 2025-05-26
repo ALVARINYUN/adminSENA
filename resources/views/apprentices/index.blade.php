@@ -27,7 +27,7 @@
                     <td class="fil">{{ $apprentice->cell_number }}</td>
                     <td class="fil">{{ $apprentice->course_id }}</td>
                     <td class="fil">{{ $apprentice->computer_id }}</td>
-                    <td class="fil"> <a href=""class="btn btn-success btn-sm">Editar</a></td>
+                    <td class="fil"> <a href="{{route('apprentice.edit', $apprentice->id)}}"class="btn btn-success btn-sm">Editar</a></td>
                     <td class="fil">
                         <form action="{{ route('apprentice.destroy', $apprentice->id) }}" method="POST" class="d-inline">
                             @csrf

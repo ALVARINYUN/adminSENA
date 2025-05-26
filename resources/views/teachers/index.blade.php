@@ -23,7 +23,7 @@
                     <td class="fil">{{ $teacher->email }}</td>
                     <td class="fil">{{ $teacher->area_id }}</td>
                     <td class="fil">{{ $teacher->training_center_id }}</td>
-                    <td class="fil"> <a href=""class="btn btn-success btn-sm">Editar</a></td>
+                    <td class="fil"> <a href="{{route('teacher.edit', $teacher->id)}}"class="btn btn-success btn-sm">Editar</a></td>
                     <td class="fil">
                         <form action="{{route('teacher.destroy', $teacher->id)}}" method="POST" class="d-inline">
                             @csrf

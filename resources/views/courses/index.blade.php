@@ -23,7 +23,7 @@
                     <td class="fil">{{ $course->day }}</td>
                     <td class="fil">{{ $course->area_id }}</td>
                     <td class="fil">{{ $course->training_center_id }}</td>
-                    <td class="fil"> <a href=""class="btn btn-success btn-sm">Editar</a></td>
+                    <td class="fil"> <a href="{{route('course.edit', $course->id)}}"class="btn btn-success btn-sm">Editar</a></td>
                     <td class="fil">
                         <form action="{{route('course.destroy', $course->id)}}" method="POST" class="d-inline">
                             @csrf

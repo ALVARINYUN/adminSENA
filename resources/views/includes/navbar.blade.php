@@ -26,7 +26,7 @@
             <a href="http://127.0.0.1:8000/teachers" class="item">
                 Instructores
             </a>
-            <a href="http://127.0.0.1:8000/Training-center" class="item">
+            <a href="http://127.0.0.1:8000/trainingcenters" class="item">
                 Sedes
             </a>
             <a href="http://127.0.0.1:8000/courses_teachers" class="item">
