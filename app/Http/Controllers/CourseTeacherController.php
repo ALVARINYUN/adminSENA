@@ -33,10 +33,32 @@ class CourseTeacherController extends Controller
 
         return redirect()->route('courseteacher.index')->with('success', 'Relación creada');
     }
- public function destroy(Course $course, Teacher $teacher)
-{
-    $course->teachers()->detach($teacher->id);
-    return redirect()->route('courseteacher.index') // Redirige al listado de relaciones
-        ->with('success', 'Relación eliminada');
-}
+
+    public function destroy(Course $course, Teacher $teacher)
+    {
+        $course->teachers()->detach($teacher->id);
+        return redirect()->route('courseteacher.index') // Redirige al listado de relaciones
+            ->with('success', 'Relación eliminada');
+    }
+
+    public function edit(Course $course, Teacher $teacher)
+    {
+        $teachers = Teacher::all(); // Correcto: lista de profesores para el dropdown
+        return view('courses_teachers.edit', compact('course', 'teacher'));
+    }
+    public function update(Request $request, Course $course, Teacher $teacher)
+    {
+        $validated = $request->validate([
+            'teacher_id' => 'required|exists:teachers,id'
+        ]);
+
+        // Eliminar la relación actual
+        $course->teachers()->detach($teacher->id);
+
+        // Crear la nueva relación
+        $course->teachers()->attach($validated['teacher_id']);
+
+        return redirect()->route('courseteacher.index')
+            ->with('success', 'Relación actualizada correctamente');
+    }
 }

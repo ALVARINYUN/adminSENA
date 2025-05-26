@@ -61,3 +61,5 @@ Route::get('teacher/{teacher}/editar', [TeacherController::class, 'edit'])->name
 Route::put('teacher/{teacher}',[TeacherController::class,'update'])->name('teacher.update');
 Route::get('/trainingcenters/{trainingcenter}/editar', [TrainingCenterController::class, 'edit'])->name('trainingcenters.edit'); 
 Route::put('trainingcenter/{trainingcenter}',[TrainingCenterController::class,'update'])->name('trainingcenter.update');
+Route::get('/courseteacher/{course}/{teacher}/edit', [CourseTeacherController::class, 'edit'])->name('courseteacher.edit');
+Route::put('/courseteacher/{course}/{teacher}', [CourseTeacherController::class, 'update'])->name('courseteacher.update');

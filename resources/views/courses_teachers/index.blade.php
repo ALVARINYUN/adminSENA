@@ -22,7 +22,7 @@
                         <td class="fil">{{ $teacher->pivot->id }}</td>
                         <td class="fil">{{ $course->id }}</td>
                         <td class="fil">{{ $teacher->id }}</td>
-                        <td class="fil"> <a href=""class="btn btn-success btn-sm">Editar</a></td>
+                        <td class="fil"> <a href="{{ route('courseteacher.edit', [$course->id, $teacher->id]) }}"class="btn btn-success btn-sm">Editar</a></td>
                         <td class="fil">
                             <form action=" {{ route('courses.teachers.destroy', [$course->id, $teacher->id]) }} " method="POST" class="d-inline">
                                 @csrf

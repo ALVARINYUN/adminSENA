@@ -37,4 +37,5 @@ class TeacherController extends Controller
         $teacher->save();
         return redirect()->route('teacher.index');
     }
+    
 }
